@@ -3,8 +3,6 @@ package com.tangv.common.util;
 
 import com.tangv.common.enums.CodeType;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.Random;
 
 /**
@@ -18,20 +16,13 @@ public class NumUtil {
         StringBuffer resultCode = new StringBuffer();
         switch (codeType) {
             case GOODS_CODE:
-                String currentTime = NumUtil.currentTime();
+                String currentTime = DateUtil.currentTime();
                 String sixNum = NumUtil.getSixNum();
                 resultCode.append(currentTime).append(sixNum);
                 break;
             default:
         }
         return resultCode.toString();
-    }
-
-    public static String currentTime() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
-        LocalDateTime now = LocalDateTime.now();
-        String currentTime = now.format(formatter);
-        return currentTime;
     }
 
     public static String getSixNum() {
