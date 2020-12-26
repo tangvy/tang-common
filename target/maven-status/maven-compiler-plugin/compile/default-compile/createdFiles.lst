@@ -1,3 +1,4 @@
+com\tangv\common\base\entity\PageDTO.class
 com\tangv\common\enums\ScheduleTaskTypeEnum.class
 com\tangv\common\response\Response.class
 com\tangv\common\util\DateUtil.class

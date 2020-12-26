@@ -34,6 +34,10 @@ public class Response<T> {
         return new Response();
     }
 
+    public static <T> Response<T> success(T data) {
+        return new Response(data);
+    }
+
     public T getData() {
         return data;
     }
