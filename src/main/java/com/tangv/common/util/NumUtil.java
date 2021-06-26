@@ -25,6 +25,9 @@ public class NumUtil {
         return resultCode.toString();
     }
 
+    /**
+     * 6位随机数
+     */
     public static String getSixNum() {
         Random random = new Random();
         String num = "";
