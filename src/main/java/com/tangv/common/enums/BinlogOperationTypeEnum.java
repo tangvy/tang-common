@@ -12,11 +12,11 @@ import lombok.Setter;
  */
 public enum BinlogOperationTypeEnum {
 
-    INSERT("insert"),
+    INSERT("INSERT"),
 
-    UPDATE("update"),
+    UPDATE("UPDATE"),
 
-    DELETE("delete"),
+    DELETE("DELETE"),
 
     ;
 

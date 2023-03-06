@@ -14,7 +14,10 @@ import lombok.Setter;
 public enum BinlogConsumeTableEnum {
 
     //todo 需要配置正确源表名
-    MARCKET_PLACE_CITY("oms_owner");
+    OMS_OWNER("oms_owner"),
+
+
+    ;
 
     BinlogConsumeTableEnum(String tableName) {
         this.tableName = tableName;

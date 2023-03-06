@@ -1,11 +1,9 @@
 package com.tangv.common.base.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.tangv.common.aspect.declare.IPojo;
 import lombok.Data;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
@@ -16,8 +14,8 @@ import java.time.LocalDateTime;
  */
 @Data
 public class BasePojo implements IPojo, Serializable {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    @TableId(value = "id")
     private Long id;
 
     private LocalDateTime createTime;
