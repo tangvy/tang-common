@@ -1,7 +1,7 @@
 package com.tangv.common.base.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
-import com.tangv.common.aspect.declare.IPojo;
+import com.tangv.common.annotations.IPojo;
 import lombok.Data;
 
 import java.io.Serializable;

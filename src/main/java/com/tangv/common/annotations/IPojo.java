@@ -1,4 +1,4 @@
-package com.tangv.common.aspect.declare;
+package com.tangv.common.annotations;
 
 /**
  * Description:
